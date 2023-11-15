@@ -31,7 +31,7 @@ def main():
     import sys
     from tempfile import mktemp
     import atexit
-    sys.path.append('/home/joe/mriqc_space/mriqc23.1.0ro0/')
+    sys.path.append('/home/joe/mriqc_space/mriqc_23_1_0ro0/')
     from mriqc import config, messages
     from mriqc.cli.parser import parse_args
 
@@ -92,7 +92,7 @@ def main():
 
         if not config.execution.notrack:
             import sys
-            sys.path.append('/home/joe/mriqc_space/mriqc23.1.0rc0/mriqc/utils/')
+            sys.path.append('/home/joe/mriqc_space/mriqc_23_1_0rc0/mriqc/utils/')
             from telemetry import setup_migas
             # from ..utils.telemetry import setup_migas
 
@@ -107,7 +107,7 @@ def main():
         global EXITCODE
         with Manager() as mgr:
             import sys
-            sys.path.append('/home/joe/mriqc_space/mriqc23.1.0rc0/mriqc/cli/')
+            sys.path.append('/home/joe/mriqc_space/mriqc_23_1_0rc0/mriqc/cli/')
             from workflow import build_workflow
             # from .workflow import build_workflow
 
@@ -257,7 +257,7 @@ def migas_exit() -> None:
     This function should be registered with `atexit` to run at termination.
     """
     import sys
-    sys.path.append('/home/joe/mriqc_space/mriqc23.1.0rc0/mriqc/utils/')
+    sys.path.append('/home/joe/mriqc_space/mriqc_23_1_0rc0/mriqc/utils/')
     from telemetry import send_breadcrumb
     # from ..utils.telemetry import send_breadcrumb
 

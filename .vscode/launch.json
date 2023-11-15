@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args":[
+                "/home/joe/mriqc_space/sub-C001/anat/",
+                "/home/joe/mriqc_space/out/",
+                "participant",
+                "--nprocs", "1",
+                "--no-sub"
+            ]
+        }
+    ]
+}

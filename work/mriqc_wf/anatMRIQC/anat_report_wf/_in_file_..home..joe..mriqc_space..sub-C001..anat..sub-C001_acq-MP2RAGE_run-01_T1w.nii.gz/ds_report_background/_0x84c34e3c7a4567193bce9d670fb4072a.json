@@ -1,7 +1,7 @@
 [
     [
         "base_directory",
-        "/home/joe/mriqc_space/mriqc23.1.0rc0/work/reportlets"
+        "/home/joe/mriqc_space/mriqc_23_1_0rc0/work/reportlets"
     ],
     [
         "check_hdr",
@@ -13,14 +13,14 @@
     ],
     [
         "desc",
-        "zoomed"
+        "background"
     ],
     [
         "in_file",
         [
             [
-                "/home/joe/mriqc_space/mriqc23.1.0rc0/work/mriqc_wf/anatMRIQC/anat_report_wf/_in_file_..home..joe..mriqc_space..sub-C001..anat..sub-C001_acq-MP2RAGE_run-01_T1w.nii.gz/PlotMosaicZoomed/mosaic.svg",
-                "eca2642d38e6c479e4b290998e37e6c7"
+                "/home/joe/mriqc_space/mriqc23.1.0rc0/work/mriqc_wf/anatMRIQC/anat_report_wf/_in_file_..home..joe..mriqc_space..sub-C001..anat..sub-C001_acq-MP2RAGE_run-01_T1w.nii.gz/PlotMosaicNoise/mosaic.svg",
+                "70f98bdea04d75200567b07bc10c7bf8"
             ]
         ]
     ],

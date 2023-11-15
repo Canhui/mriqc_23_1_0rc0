@@ -1,7 +1,7 @@
 import migas
 
 import sys
-sys.path.append('/home/joe/mriqc_space/mriqc23.1.0rc0/mriqc/')
+sys.path.append('/home/joe/mriqc_space/mriqc_23_1_0rc0/mriqc/')
 import config
 __version__ ='1'
 # from .. import __version__, config
