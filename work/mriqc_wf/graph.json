@@ -1,0 +1,237 @@
+[
+    {
+        "group": 1,
+        "imports": [],
+        "name": "00_datalad_get",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "00_datalad_get"
+        ],
+        "name": "01_conform",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "00_datalad_get"
+        ],
+        "name": "02_metadata",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "01_conform"
+        ],
+        "name": "03_pre_clip",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "01_conform"
+        ],
+        "name": "04_RotationMask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "01_conform"
+        ],
+        "name": "05_PlotMosaicNoise",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "03_pre_clip"
+        ],
+        "name": "06_pre_n4",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "05_PlotMosaicNoise"
+        ],
+        "name": "07_ds_report_background",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "06_pre_n4"
+        ],
+        "name": "08_synthstrip",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "03_pre_clip",
+            "08_synthstrip"
+        ],
+        "name": "09_post_n4",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "01_conform",
+            "08_synthstrip"
+        ],
+        "name": "10_smoothness",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "01_conform",
+            "08_synthstrip"
+        ],
+        "name": "11_PlotMosaicZoomed",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "01_conform",
+            "09_post_n4"
+        ],
+        "name": "12_final_inu",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "08_synthstrip",
+            "09_post_n4"
+        ],
+        "name": "13_final_masked",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "00_datalad_get",
+            "08_synthstrip",
+            "09_post_n4"
+        ],
+        "name": "14_SpatialNormalization",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "09_post_n4"
+        ],
+        "name": "15_fsl_bet",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "11_PlotMosaicZoomed"
+        ],
+        "name": "16_ds_report_zoomed",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "00_datalad_get",
+            "13_final_masked"
+        ],
+        "name": "17_segmentation",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "14_SpatialNormalization",
+            "08_synthstrip"
+        ],
+        "name": "18_invert_xfm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "01_conform",
+            "14_SpatialNormalization"
+        ],
+        "name": "19_MNItpms2t1",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "17_segmentation",
+            "09_post_n4"
+        ],
+        "name": "20_harmonize",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "01_conform",
+            "15_fsl_bet",
+            "04_RotationMask",
+            "18_invert_xfm"
+        ],
+        "name": "21_ArtifactMask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "00_datalad_get",
+            "04_RotationMask",
+            "21_ArtifactMask"
+        ],
+        "name": "22_provenance",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "01_conform",
+            "17_segmentation",
+            "20_harmonize",
+            "10_smoothness",
+            "19_MNItpms2t1",
+            "09_post_n4",
+            "15_fsl_bet",
+            "04_RotationMask",
+            "21_ArtifactMask"
+        ],
+        "name": "23_measures",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "01_conform",
+            "21_ArtifactMask"
+        ],
+        "name": "24_ComputeQI2",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "00_datalad_get",
+            "02_metadata",
+            "22_provenance",
+            "24_ComputeQI2",
+            "23_measures"
+        ],
+        "name": "25_datasink",
+        "size": 1
+    }
+]

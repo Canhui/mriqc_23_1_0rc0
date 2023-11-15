@@ -1,0 +1,23 @@
+[
+    [
+        "check_dtype",
+        false
+    ],
+    [
+        "check_ras",
+        true
+    ],
+    [
+        "in_file",
+        [
+            "/home/joe/mriqc_space/sub-C001/anat/sub-C001_acq-MP2RAGE_run-01_T1w.nii.gz",
+            "1620f9b678d4c9077d1c92d4478c71fb"
+        ]
+    ],
+    [
+        "needed_outputs",
+        [
+            "out_file"
+        ]
+    ]
+]

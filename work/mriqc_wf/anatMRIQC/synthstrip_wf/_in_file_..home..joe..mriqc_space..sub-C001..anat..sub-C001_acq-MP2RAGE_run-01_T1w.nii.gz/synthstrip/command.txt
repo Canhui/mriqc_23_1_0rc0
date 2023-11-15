@@ -1,0 +1,1 @@
+synthstrip -b 1 -i /home/joe/mriqc_space/mriqc23.1.0rc0/work/mriqc_wf/anatMRIQC/synthstrip_wf/_in_file_..home..joe..mriqc_space..sub-C001..anat..sub-C001_acq-MP2RAGE_run-01_T1w.nii.gz/pre_n4/clipped_corrected.nii.gz --model /home/joe/dependency/freesurfer/models/synthstrip.1.pt -o clipped_corrected_desc-brain.nii.gz -m clipped_corrected_desc-brain_mask.nii.gz
